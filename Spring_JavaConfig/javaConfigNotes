@@ -1,0 +1,9 @@
+Java Configuration without using XML (using Annotations equivalents)
+1. Configuration done completely in Java code without XML file
+2. Replace XML file with Java config class with @COnfiguration annotation
+3. @bean annotation same as <bean> tag in XML file
+4. Instead of using ClassPathXmlApplicationContext to grab XML config file,
+   you will instead use AnnotationConfigApplicationContext
+5. The first, or if only one config file, can be added as configName.class as a 
+   parameter in the AnnotationConfigApplicationContext. If there are multiple 
+   config files, then the config files can then be added using context.register()
